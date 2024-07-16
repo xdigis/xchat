@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "XChat Mod",
+    "version": "1.0",
+    "description": "Plugin untuk mengelola XChat pada WhatsApp Web",
+    "icons": {
+      "48": "icons/logo.png"
+    },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "tabs",
+      "https://web.whatsapp.com/",
+      "http://127.0.0.1:8888/"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icons/logo.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/*"],
+        "css": ["css/styles.css"],
+        "js": ["bundle.js"]
+      }
+    ],
+    "background": {
+      "scripts": ["bundle.js"], 
+      "persistent": false
+    }
+  }
+  

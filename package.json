@@ -1,0 +1,22 @@
+{
+    "name": "xchat-mod",
+    "version": "1.0.0",
+    "description": "XChat Mod project with Webpack",
+    "main": "src/js/main.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.24.8",
+        "@babel/preset-env": "^7.24.8",
+        "babel-loader": "^8.3.0",
+        "copy-webpack-plugin": "^12.0.2",
+        "css-loader": "^5.2.7",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.93.0",
+        "webpack-cli": "^4.10.0"
+    },
+    "keywords": []
+}

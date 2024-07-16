@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#xchat-container {
+    display: flex;
+    width: 750px;
+    height: 530px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #AAB1C3;
+    box-shadow: 11px 12px 12px -3px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 11px 12px 12px -3px rgba(0,0,0,0.41);
+    /* Hapus -moz-box-shadow */
+}
+
+#xchat-sidebar {
+    width: 30%;
+    background-color: #101B21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+}
+
+.xchat-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #202C33;
+    padding: 20px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.xchat-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.xchat-logo span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.xchat-menu {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.xchat-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    margin: 10px 0;
+}
+
+.xchat-menu-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.xchat-menu-item span {
+    font-size: 16px;
+}
+
+.xchat-menu-item:hover {
+    background-color: #202C33;
+    border-radius: 5px;
+}
+
+.xchat-menu-item.active {
+    background-color: #53C85C;
+    border-radius: 5px;
+}
+
+#xchat-content {
+    width: 70%;
+    background-color: #AAB1C3;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#xchat-content-body {
+    width: 95%;
+    height: 95%;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.page-content {
+    display: none;
+}
+
+.page-content.active {
+    display: block;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#logOutput {
+    width: 100%;
+    height: 80%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+#deleteLogButton {
+    display: block;
+    width: 100%;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#deleteLogButton:hover {
+    background-color: #c0392b;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Tambahkan ini ke file styles.css */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+/* Tambahan gaya untuk elemen baru */
+input[type="text"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#notif {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}

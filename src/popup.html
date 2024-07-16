@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XChat Mod</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="xchat-container">
+        <div id="xchat-sidebar">
+            <div class="xchat-logo">
+                <img src="icons/logo.png" alt="Logo">
+                <span>XChat</span>
+            </div>
+            <div class="xchat-menu">
+                <div class="xchat-menu-item active" data-page="project">
+                    <img src="icons/project.png" alt="Project">
+                    <span>Project</span>
+                </div>
+                <div class="xchat-menu-item" data-page="misi">
+                    <img src="icons/misi.png" alt="Misi">
+                    <span>Misi</span>
+                </div>
+                <div class="xchat-menu-item" data-page="list-misi">
+                    <img src="icons/list-misi.png" alt="List Misi">
+                    <span>List Misi</span>
+                </div>
+                <div class="xchat-menu-item" data-page="setting">
+                    <img src="icons/setting.png" alt="Setting">
+                    <span>Setting</span>
+                </div>
+            </div>
+        </div>
+        <div id="xchat-content">
+            <div id="xchat-content-body">
+                <div id="project" class="page-content active">
+                    <input type="text" id="chatName" placeholder="Masukan Nama Chat / Grup">
+                    <button id="checkButton">Check</button>
+                    <button id="scrollButton">Scroll Chat</button>
+                    <button id="exportButton">Export Chat</button>
+                    <button id="uploadButton">Upload Chat</button>
+                    <div id="notif"></div>
+                </div>
+                <div id="misi" class="page-content hidden">
+                    <input type="text" id="misiName" placeholder="Masukan Nama Misi">
+                    <input type="text" id="misiChatName" placeholder="Masukan Nama Chat / Grup">
+                    <button id="misiCheckButton">Check</button>
+                    <input type="text" id="exportInterval" placeholder="Masukan Interval Export" disabled>
+                    <button id="createMisiButton" disabled>Buat Misi</button>
+                    <div id="notifMisi"></div>
+                </div>
+                <div id="setting" class="page-content hidden">
+                    <input type="text" id="serverUrl" placeholder="URL Server">
+                    <input type="number" id="maxScroll" placeholder="Maksimal Scroll" value="1">
+                    <button id="saveButton">Save</button>
+                </div>
+                <div id="list-misi" class="page-content hidden">
+                    <h3>List Misi</h3>
+                    <div id="misiList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
